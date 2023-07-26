@@ -1,0 +1,10 @@
+let check_pal N =
+    let r Number =
+        let rec re x Result =
+            x eq 0 -> Result
+            | re (x / 10) (Result * 10 + (x - (x / 10)*10))
+        in re Number 0
+    in N eq r N
+in let pal N = 
+    check_pal N -> 'Palindrome' | 'Not a palindrome'
+in Print(pal 12345)

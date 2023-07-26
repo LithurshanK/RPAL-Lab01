@@ -1,0 +1,5 @@
+let greater x y z = (x ge y) & (z ge x) -> z 
+	| ((x ge y) & (x ge z)) -> x 
+	| y
+in
+Print(greater 5 10 3)

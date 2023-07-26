@@ -1,0 +1,3 @@
+let oddOrEven N = (N/2)*2 eq N -> 'Even' | 'Odd'
+in
+Print(oddOrEven (0))

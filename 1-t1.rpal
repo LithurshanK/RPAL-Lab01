@@ -1,0 +1,4 @@
+let check N = N ls 0 -> 'Negative' | 'Positive'
+   in
+Print(check (10))
+
